@@ -1,4 +1,5 @@
 <%= form_for(@restaurant) do |f| %>
+  <!-- form validation -->
   <% if @restaurant.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@restaurant.errors.count, "error") %> prohibited this restaurant from being saved:</h2>
@@ -10,24 +11,26 @@
       </ul>
     </div>
   <% end %>
+  
 
-  <div class="field">
+  <!-- form inputs -->
+  <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :address %><br>
-    <%= f.text_field :address %>
+    <%= f.text_field :address, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
+    <%= f.text_field :phone, class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :website %><br>
-    <%= f.text_field :website %>
+    <%= f.text_field :website, class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>
