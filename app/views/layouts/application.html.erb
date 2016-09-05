@@ -14,7 +14,12 @@
 <body>
   
   <%= render 'layouts/navbar' %>
-  <div class="container">
+  <div class="container-fluid">
+    
+    <!-- message for users devise -->
+    <!--<p class="notice"><%= notice %></p>-->
+    <!--<p class="alert"><%= alert %></p>-->
+
     <!-- in asp.net this would be the master page, yield inserts all other pages here -->
     <%= yield %> 
     

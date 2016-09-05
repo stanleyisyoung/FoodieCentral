@@ -5,10 +5,13 @@ ruby '2.1.1'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 
+#stanley was here
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave' #picture uploading
 gem "fog-aws" #production hosting for img, aws s3
 gem "figaro" #protect aws keys
 gem "mini_magick" #img resizing 
+gem 'devise' #user auth
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
