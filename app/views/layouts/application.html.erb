@@ -3,11 +3,12 @@
 <html>
 <head>
   <title>Stanleyeats</title>
+  <%= render 'layouts/bootstrapCDN' %> <!-- put b4 so custom css overrides bootstrap -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   
-  <%= render 'layouts/bootstrapCDN' %>
+  
 
 </head>
 <body>
