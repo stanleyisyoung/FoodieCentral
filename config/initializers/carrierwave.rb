@@ -1,3 +1,4 @@
+#uses figaro gem to help hide important keys, preventing aws from being hacked
 CarrierWave.configure do |config|
   config.fog_provider = 'fog/aws'                        # required
   config.fog_credentials = {

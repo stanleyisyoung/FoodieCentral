@@ -8,6 +8,7 @@ gem 'rails', '4.2.4'
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave' #picture uploading
 gem "fog-aws" #production hosting for img, aws s3
 gem "figaro" #protect aws keys
+gem "mini_magick" #img resizing 
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
