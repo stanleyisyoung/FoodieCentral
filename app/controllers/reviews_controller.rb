@@ -68,6 +68,8 @@ class ReviewsController < ApplicationController
       @restaurant = Restaurant.find(params[:restaurant_id])
     end
     
+    
+    
     # Never trust parameters from the scary internet, only allow the white list through.
     def review_params
       params.require(:review).permit(:rating, :comment)
