@@ -23,6 +23,15 @@
     </p>
     
     <%= link_to 'Write a Review', new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+    <br/><br/>
+    <iframe
+      width="230"
+      height="230"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCyzQ5xjq9cjvywB0EiPoo_3g6q6dlBMA4
+        &q=<%= @restaurant.address.parameterize %>" allowfullscreen>
+    </iframe>
+    
     <br/>
     <%= link_to 'Edit', edit_restaurant_path(@restaurant), class: "btn btn-link" %> |
     <%= link_to 'Back', restaurants_path, class: "btn btn-link" %>
