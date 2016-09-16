@@ -5,7 +5,10 @@
     <h2>
       <%= @restaurant.name %>
     </h2>
-      
+    
+    <div class="star-rating" data-score=<%= @avg_rating %>></div>
+    <p><%= "#{@reviews.length} reviews" %></p>
+    
     <p>
       <%= @restaurant.address %>
     </p>
@@ -30,11 +33,21 @@
     <% if @reviews.count == 0 %>
       <h3>BE THE FIRST TO WRITE A REVIEW!!!</h3>
     <% else %>
-      <% @reviews.each do |review| %>
-        <div class="star-rating" data-score=<%= review.rating %>></div>
-        <p>-----------------------</p>
-        <p><%= review.comment %></p>
-      <% end %>
+      <table class="table">
+        <tbody>
+          <% @reviews.each do |review| %>
+            <tr>
+              <td>
+                <div class="star-rating" data-score=<%= review.rating %>></div>
+                <p><%= h(review.comment).gsub(/\n/, '<br/>').html_safe %></p>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      
+       
+      
     <% end %>
   </div>
   
