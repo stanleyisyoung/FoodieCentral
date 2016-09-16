@@ -31,7 +31,7 @@
       <h3>BE THE FIRST TO WRITE A REVIEW!!!</h3>
     <% else %>
       <% @reviews.each do |review| %>
-        <p><%= review.rating %></p>
+        <div class="star-rating" data-score=<%= review.rating %>></div>
         <p>-----------------------</p>
         <p><%= review.comment %></p>
       <% end %>
@@ -40,5 +40,14 @@
   
 </div>
 
+<script>
+  $('.star-rating').raty({
+    path: 'https://s3-us-west-1.amazonaws.com/stanleyeatsyelpclone/stars/',
+    readOnly: true,
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+</script>
 
 
