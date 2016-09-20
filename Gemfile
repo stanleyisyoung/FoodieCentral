@@ -11,7 +11,7 @@ gem "fog-aws" #production hosting for img, aws s3
 gem "figaro" #protect aws keys
 gem "mini_magick" #img resizing 
 gem 'devise' #user auth
-
+gem 'searchkick' #search api from the makers of instacart
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

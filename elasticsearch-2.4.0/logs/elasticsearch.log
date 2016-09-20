@@ -1,0 +1,13 @@
+[2016-09-20 23:20:33,420][INFO ][node                     ] [Equinox] version[2.4.0], pid[4664], build[ce9f0c7/2016-08-29T09:14:17Z]
+[2016-09-20 23:20:33,423][INFO ][node                     ] [Equinox] initializing ...
+[2016-09-20 23:20:34,556][INFO ][plugins                  ] [Equinox] modules [lang-groovy, reindex, lang-expression], plugins [], sites []
+[2016-09-20 23:20:34,661][INFO ][env                      ] [Equinox] using [1] data paths, mounts [[/ (none)]], net usable_space [3.6gb], net total_space [5.2gb], spins? [possibly], types [aufs]
+[2016-09-20 23:20:34,663][INFO ][env                      ] [Equinox] heap size [989.8mb], compressed ordinary object pointers [true]
+[2016-09-20 23:20:34,667][WARN ][env                      ] [Equinox] max file descriptors [8192] for elasticsearch process likely too low, consider increasing to at least [65536]
+[2016-09-20 23:20:38,351][INFO ][node                     ] [Equinox] initialized
+[2016-09-20 23:20:38,352][INFO ][node                     ] [Equinox] starting ...
+[2016-09-20 23:20:38,618][INFO ][transport                ] [Equinox] publish_address {127.0.0.1:9301}, bound_addresses {127.0.0.1:9301}, {[::1]:9301}
+[2016-09-20 23:20:38,628][INFO ][discovery                ] [Equinox] elasticsearch/-1OJoosnR7q4kZaY5f3GVQ
+[2016-09-20 23:20:41,993][INFO ][cluster.service          ] [Equinox] detected_master {Foxfire}{mlawEqasSbGZs74aSNRqWQ}{127.0.0.1}{127.0.0.1:9300}, added {{Foxfire}{mlawEqasSbGZs74aSNRqWQ}{127.0.0.1}{127.0.0.1:9300},}, reason: zen-disco-receive(from master [{Foxfire}{mlawEqasSbGZs74aSNRqWQ}{127.0.0.1}{127.0.0.1:9300}])
+[2016-09-20 23:20:42,426][INFO ][http                     ] [Equinox] publish_address {127.0.0.1:9201}, bound_addresses {127.0.0.1:9201}, {[::1]:9201}
+[2016-09-20 23:20:42,428][INFO ][node                     ] [Equinox] started
